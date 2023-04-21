@@ -16,3 +16,9 @@ spring:
   sql:
     init:
       platform: postgres
+
+  config:
+    import:
+      - app/jwt.yml
+      - app/cors.yml
+      - app/password-encoder.yml
