@@ -1,9 +1,7 @@
 package com.example.demo.properties.cors.allowed;
 
 import org.springframework.boot.context.properties.ConfigurationPropertiesBinding;
-import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
-@ConfigurationPropertiesScan
 @ConfigurationPropertiesBinding
 public record WebCorsAllowedProperties(
         String[] headers,
@@ -15,6 +13,6 @@ public record WebCorsAllowedProperties(
             origins = new String[] {"http://localhost:3000"};
         }
         if (headers == null || headers.length == 0) headers = new String[] {"*"};
-        if (methods == null || methods.length == 0) headers = new String[] {"*"};
+        if (methods == null || methods.length == 0) methods = new String[] {"*"};
     }
 }
