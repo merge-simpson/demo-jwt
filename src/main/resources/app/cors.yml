@@ -1,0 +1,10 @@
+app:
+  security:
+    cors:
+      exposed-headers: "*"
+      allowed:
+        methods: "*"
+        headers: "*"
+        origins:
+          - http://localhost:3000
+          - http://127.0.0.1:3000
