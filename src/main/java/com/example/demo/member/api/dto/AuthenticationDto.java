@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Pattern;
+import lombok.Builder;
 
 public final class AuthenticationDto {
     public record SignInRequestDto (
@@ -14,8 +15,9 @@ public final class AuthenticationDto {
             String rawPassword
     ) {}
 
+    @Builder
     public record SignInResponseDto (
-            @JsonInclude(Include.NON_DEFAULT) Boolean requires2Fa,
+            @JsonInclude(Include.NON_DEFAULT) Boolean requiresMfa,
             @JsonInclude(Include.NON_EMPTY) String token
     ) {}
 }
