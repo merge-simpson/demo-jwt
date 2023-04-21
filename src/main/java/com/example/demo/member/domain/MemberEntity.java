@@ -15,9 +15,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(
-        name = DataSourceConstants.TB_MEMBER,
-        schema = DataSourceConstants.DEFAULT_SCHEMA,
-        catalog = DataSourceConstants.DEFAULT_SCHEMA
+        name = DataSourceConstants.TB_MEMBER
+//        ,
+//        schema = DataSourceConstants.DEFAULT_SCHEMA,
+//        catalog = DataSourceConstants.DEFAULT_SCHEMA
 )
 public class MemberEntity extends BaseEntity {
     @Column

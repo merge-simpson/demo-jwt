@@ -28,6 +28,7 @@ public final class AuthenticationUserMappingService implements UserDetailsServic
         return User
                 .withUsername(email)
                 .password(authInfo.password())
+                .authorities("USER")
                 .accountExpired(false)
                 .accountLocked(false)
                 .credentialsExpired(false)
