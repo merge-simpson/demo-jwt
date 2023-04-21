@@ -1,0 +1,4 @@
+app:
+  jwt:
+    secret: ${jwt.secret:lo7oultF+BsBSO6cMCae79s4qRZvJMxPiIM2v8QJ8R3yiFnzxNHSUy2w5pQDFwr7R1MdKfCs7wQPtNdXgXxJlA==}
+    expire-in: 1800000 # Millis
