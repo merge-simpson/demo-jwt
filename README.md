@@ -1,18 +1,18 @@
 # Features(한/Eng)
 
-JWT 인증에만 집중한 프로젝트입니다.
+**JWT 인증**에만 집중한 프로젝트입니다.
 
-- 회원가입 미포함(기본 데이터는 DB 구축 시 SQL에 포함. 예제 소스 이해에 영향 없도록 소스 코드와 분리시킴.).
-- 인증: `AuthenticationManager`를 사용한 인증(일반적 수단).
-- JWT 인증 토큰 Provider: JWT 액세스 토큰 발행.
-- Java 17에서 사용할 수 있는 신택스 활용(JDK 17)
+- **회원가입 미포함**(기본 데이터는 DB 구축 시 SQL에 포함. 예제 소스 이해에 영향 없도록 소스 코드와 분리시킴.).
+- **인증**: `AuthenticationManager`를 사용한 인증(일반적 수단).
+- JWT 인증 토큰 Provider: **JWT 액세스 토큰 발행**.
+- **Java 17**에서 사용할 수 있는 **신택스** 활용(JDK 17)
 
-Focus on JWT authentication.
+Focus on **JWT authentication**.
 
-- No Sign Up(Initial data is inserted when we construct database. So source code will not confuse you.)
-- Authentication: using Authentication Manager(General use).
-- JWT Authentication Token Provider: Generate JWT Access Token.
-- Syntax Level: JDK 17(Java 17)
+- **No Sign Up**(Initial data is inserted when we construct database. So ***source code will not confuse you***.)
+- **Authentication**: using <u>***Authentication Manager***</u>(General use).
+- JWT Authentication Token Provider: Generate <u>**JWT Access Token**</u>.
+- **Syntax Level**: <u>**JDK 17**</u>(Java 17)
 
 # Uses
 
