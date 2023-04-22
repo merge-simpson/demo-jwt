@@ -1,4 +1,4 @@
-# Features(한국어/English)
+# Features(한/Eng)
 
 JWT 인증에만 집중한 프로젝트입니다.
 
