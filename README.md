@@ -66,6 +66,14 @@ docker-compose up -d --build
 
 도커 컴포즈를 사용할 줄 모른다면, Docker Desktop을 설치한 후 새 터미널 윈도우를 열고 프로젝트 루트에서 위 명령어를 실행하면 됩니다.
 
+프로젝트 루트에서 실행하기 위해서는 `cd`(change directory) 명령어로 프로젝트 루트로 이동하시면 됩니다.
+
+예를 들어 윈도우에서 이 프로젝트를 받은 경로가 `D:\workspace-group\intellij-workspace\demo-jwt`라면,
+
+`D:` 명령으로 D 드라이브로 전환한 상태에서, `cd D:\workspace-group\intellij-workspace\demo-jwt` 명령으로 프로젝트 루트로 이동할 수 있습니다.
+
+그 경로에서 위 명령어(`docker-compose up -d --build`)를 실행하면 됩니다.
+
 (새로 설치한 프로그램은 기존에 열려 있던 터미널이 인식하지 못하는 경우도 있기 때문에 새 터미널 창을 권하였으며, 잘 찾으면 그냥 진행.)
 
 또는 데이터베이스를 직접 설치한 후 프로젝트 루트 하위에 있는 db 폴더에서 DDL 파일의 내용을 DB에 직접 실행합니다(SQL 파일).
