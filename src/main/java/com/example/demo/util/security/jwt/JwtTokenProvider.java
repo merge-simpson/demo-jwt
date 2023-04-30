@@ -12,7 +12,7 @@ import java.security.Key;
 import java.util.Date;
 
 @Component
-public class JwtTokenProvider {
+public final class JwtTokenProvider {
 
     private final Key secretKey;
     private final Long expireIn;
@@ -36,13 +36,11 @@ public class JwtTokenProvider {
 
         claims.put("roles", roles);
 
-        String jwt = Jwts.builder()
+        return Jwts.builder()
                 .setClaims(claims)
                 .setIssuedAt(now)
                 .setExpiration(expireAt)
                 .signWith(secretKey, SignatureAlgorithm.HS256)
                 .compact();
-
-        return jwt;
     }
 }

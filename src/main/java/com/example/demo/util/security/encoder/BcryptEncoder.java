@@ -1,14 +1,13 @@
 package com.example.demo.util.security.encoder;
 
-import com.example.demo.properties.PasswordEncoderProperties;
+import lombok.NoArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.stereotype.Component;
 
-@Component
+@NoArgsConstructor
 public class BcryptEncoder extends BCryptPasswordEncoder {
 
-    BcryptEncoder(PasswordEncoderProperties properties) {
-        super(properties.costFactor());
+    BcryptEncoder(int costFactor) {
+        super(costFactor);
     }
 
     @Override
