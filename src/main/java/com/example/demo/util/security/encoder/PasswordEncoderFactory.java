@@ -1,5 +1,6 @@
 package com.example.demo.util.security.encoder;
 
+import com.example.demo.util.security.encoder.fixed.BcryptEncoder;
 import com.example.demo.util.security.encoder.properties.PasswordEncoderProperties;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;

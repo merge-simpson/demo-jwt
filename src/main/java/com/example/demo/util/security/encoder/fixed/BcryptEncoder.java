@@ -1,4 +1,4 @@
-package com.example.demo.util.security.encoder;
+package com.example.demo.util.security.encoder.fixed;
 
 import lombok.NoArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -6,7 +6,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @NoArgsConstructor
 public class BcryptEncoder extends BCryptPasswordEncoder {
 
-    BcryptEncoder(int costFactor) {
+    public BcryptEncoder(int costFactor) {
         super(costFactor);
     }
 
