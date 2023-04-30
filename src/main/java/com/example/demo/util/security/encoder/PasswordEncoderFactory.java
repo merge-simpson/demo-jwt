@@ -55,8 +55,8 @@ public final class PasswordEncoderFactory {
     public PasswordEncoder getEncoder(@NonNull EncoderType encoder) {
         return switch(encoder) {
             case BCRYPT -> createBcrypt();
-            case PBKDF2 -> createScrypt();
-            case SCRYPT -> createPbkdf2();
+            case SCRYPT -> createScrypt();
+            case PBKDF2 -> createPbkdf2();
         };
     }
 
