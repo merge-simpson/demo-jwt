@@ -34,14 +34,14 @@ public final class PasswordEncoderFactory {
             PREFIX = prefix;
         }
 
-        public static EncoderType findByPrefixExpression(String expressionWithBrackets) {
+        public static EncoderType findByPrefixExpression(String bracketExpression) {
             return Arrays.stream(values())
-                    .filter((encoderType) -> Objects.equals(encoderType.PREFIX, expressionWithBrackets))
+                    .filter((encoderType) -> Objects.equals(encoderType.PREFIX, bracketExpression))
                     .findAny()
                     .orElseThrow(() -> new IllegalStateException(
                             MessageFormat.format(
                                     "잘못된 비밀번호 인코더 표현식이 제공됨. {bcrypt} 등의 양식으로 제공하여야 함. 제공된 내용은: {0}, 허용된 목록: {1}",
-                                    expressionWithBrackets,
+                                    bracketExpression,
                                     Arrays.stream(values()).map(item -> item.PREFIX)
                             )
                     ));
